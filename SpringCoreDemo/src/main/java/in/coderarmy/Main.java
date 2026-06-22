@@ -18,13 +18,13 @@ public class Main {
             SpringBoot -> automatically configures the things
             SpringMVC -> used for creating web applications
             Normally programs -> objects
-            SpringFramework(IOC) Container -> Beans
+            SpringFramework(IOC Container) -> Beans
          */
         Class<AppConfig> clazz = AppConfig.class;
         ApplicationContext context = new AnnotationConfigApplicationContext(clazz);
         /*
             An Ioc container has been made using annotation based configuration
-            and all the rules are in app config class which i have provided the metadata
+            and all the rules are in app config class which I have provided the metadata
         */
 
         /*

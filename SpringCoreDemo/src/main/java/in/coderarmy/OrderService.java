@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OrderService {
-    @Autowired
-    private PaymentService payment;
+      @Autowired
+      private PaymentService payment;
 //
 //    @Autowired
 //    public OrderService(PaymentService payment) {
@@ -19,5 +19,12 @@ public class OrderService {
     public void placeOrder(){
         payment.pay();
         System.out.println("Order is placed");
+    }
+
+    @Component
+    public static class PaymentService {
+        public void pay(){
+            System.out.println("Payment is done");
+        }
     }
 }
